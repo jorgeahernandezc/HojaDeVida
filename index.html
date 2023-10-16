@@ -7,70 +7,101 @@
   </head>
   <body>
     <!-- Contenido principal de tu hoja de vida aquí -->
-    
+
     <div class="container">
-      <div>  
-        <section class="DatosContacto">
-          <img class="FotoPerfil" src="/assets/images/FotoPerfil.jpeg" alt="Foto personal">  
-          <header>
-            <h1>Jorge Alberto Hernandez Carranza</h1>
-          </header>
-          <p>Email: jorgehernandezc3008@gmail.com</p>
-          <p>Teléfono: +504 8794 5787</p>
-          <p>Ubicación: Tegucigalpa,Honduras</p>
-          <p>
-            <a href="https://github.com/jorgeahernandezc" target="_blank">Perfil GitHub</a>
-          </p>
-          <p><a href="URL_LINKEDIN" target="_blank">Perfil LinkedIn</a></p>
-        </section>
+      <div id="encabezado">
+        <header>
+          <a class="fcc-btn" href="/public/acerca-de.html">Acerca de Mi</a> 
+          <a class="fcc-btn" href="/public/proyectos.html">Proyectos</a>   
+        </header>
       </div>
-      <div class="seccion2">
-        <section class="Estudios Realizados">
-          <h2>Estudios realizados</h2>
-          <ul>
-            <li>Ingeniería en Sistemas, Univerisida Nacional Autónoma de Honduras </li>
-            <li>Bachillerato Tecnico en Computación, Instituto San José del Pedregal</li>
-            <li>Bachillerato En ciencia y Letras, Instituto San José del Pedregal</li>
-          </ul>
-        </section>
-        <section class="ExperienciaLaboral">
-            <h2> Experiencia Laboral </h2>
-          <ul>
-            <li>
-              Enero 2023-Presente: Pasante de pregramas de educacion, Creado Mi
-              futuro Aqui / USAID
-            </li>
-          </ul>
-        </section>
-        <section class="HabilidadesTecnicas">
-          <h2>Habilidades Técnicas</h2>
-          <table>
-            <tr>
-              <th>Habilidad</th>
-              <th>Nivel</th>
-            </tr>
-            <tr>
-              <td>JavaScript</td>
-              <td>Intermedio</td>
-            </tr>
-            <!-- Más filas según tus habilidades -->
-          </table>
-        </section>
-        <section class="Intereses">
-          <h2>Intereses</h2>
-        </section>
-        <section class="FormularioContacto">
-          <form action="#" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="user_email" />
 
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="user_message"></textarea>
+      <div class="container-interno">
+        <div id="seccion1">
+          <section class="DatosContacto">
+            <img
+              class="FotoPerfil"
+              src="/assets/images/FotoPerfil.jpeg"
+              alt="Foto personal"
+            />
 
-            <input type="submit" value="Contactar" />
-          </form>
-        </section>
+            <p>Email: jorgehernandezc3008@gmail.com</p>
+            <p>Teléfono: +504 8794 5787</p>
+            <p>Ubicación: Tegucigalpa,Honduras</p>
+            <p>
+              <a href="https://github.com/jorgeahernandezc" target="_blank"
+                >Perfil GitHub</a
+              >
+            </p>
+            <p><a href="URL_LINKEDIN" target="_blank">Perfil LinkedIn</a></p>
+          </section>
+        </div>
+        <div id="seccion2">
+          <h1>Jorge Alberto Hernandez</h1>
+          <p id="profesion">Ing. En Sistemas</p>
+          <section class="Estudios Realizados">
+            <h2>Estudios realizados</h2>
+            <ul>
+              <li>
+                Ingeniería en Sistemas, Univerisida Nacional Autónoma de
+                Honduras
+              </li>
+              <li>
+                Bachillerato Tecnico en Computación, Instituto San José del
+                Pedregal
+              </li>
+              <li>
+                Bachillerato En ciencia y Letras, Instituto San José del
+                Pedregal
+              </li>
+            </ul>
+          </section>
+          <section class="ExperienciaLaboral">
+            <h2>Experiencia Laboral</h2>
+            <ul>
+              <li>
+                Enero 2023-Presente: Pasante de pregramas de educacion, Creado
+                Mi futuro Aqui / USAID
+              </li>
+            </ul>
+          </section>
+          <section class="HabilidadesTecnicas">
+            <h2>Habilidades Técnicas</h2>
+            <table id="miTabla">
+              <tr>
+                <th>Habilidad</th>
+                <th>Nivel</th>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>Intermedio</td>
+              </tr>
+              <!-- Más filas según tus habilidades -->
+            </table>
+            <button id="addSkill">Añadir Habilidad</button>
+          </section>
+          <section class="Intereses">
+            <h2>Certificaciones</h2>
+            <ul id="listaCertificaciones"></ul>
+          </section>
+          <section class="FormularioContacto">
+            <form action="" method="post">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="user_email" />
+
+              <label for="message">Mensaje:</label>
+              <textarea id="message" name="user_message"></textarea>
+
+              <input id="contactar" type="submit" value="Contactar" />
+            </form>
+          </section>
+          <section id="container-calificacion">
+              <button id="calificacion">Calificanos</button>	
+          </section>
+          
+        </div>
       </div>
     </div>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
